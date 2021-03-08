@@ -18,12 +18,13 @@ int main(int argc, char *argv[])
 	}
 
 	srand(time(NULL));
+	
 	int counter;
 	int passwordLength = atoi(argv[1]);
 	char symbols[91] = "!@#$%^&*()_-+=`~{}:;'|/,<>.?1234567890AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz";
 
 	for(counter = 1; counter <= passwordLength; ++counter)
-		printf("%c", symbols[rand() % 90]);
+		printf("%c\n", symbols[rand() % 90]);
 
 	return 0;
 }
